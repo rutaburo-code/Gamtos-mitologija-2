@@ -1980,7 +1980,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #44f2cb;
+				background-color: #F9F7F0;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -3881,4 +3881,5 @@ input, select, textarea {
 		}
 
 	}
+
 
