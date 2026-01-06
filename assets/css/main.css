@@ -3999,6 +3999,13 @@ ul.feature-icons li .icon svg {
     width: 100%;
     height: 100%;
 }
+/* Mobile fix for feature icons */
+@media screen and (max-width: 736px) {
+    ul.feature-icons li {
+        width: 100%;
+    }
+}
+
 
 
 
