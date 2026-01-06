@@ -3177,7 +3177,7 @@ input, select, textarea {
 			width: 50%;
 		}
 
-			ul.feature-icons li:before {
+		/*	ul.feature-icons li:before {
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 512 512'%3E%3Cpath d='M256,0l221.7,128v256L256,512L34.3,384V128L256,0z' fill='rgba(144, 144, 144, 0.1)' /%3E%3C/svg%3E");
 				background-position: center;
 				background-repeat: no-repeat;
@@ -3192,11 +3192,100 @@ input, select, textarea {
 				text-align: center;
 				top: 0;
 				width: 3.25rem;
-			}
+			}  */
 
 			ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
 				margin-top: 0;
 			}
+/* 1st icon */
+ul.feature-icons li:nth-child(1):before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g><path fill='none' d='M0 0h24v24H0z'/><path d='M7.291 20.824L2 22l1.176-5.291A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.956 9.956 0 0 1-4.709-1.176z'/></g></svg>");
+}
+
+/* 2nd icon */
+ul.feature-icons li:nth-child(2):before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;utf8,<svg>ANTRA IKONA ČIA</svg>");
+}
+
+/* 3rd icon */
+ul.feature-icons li:nth-child(3):before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;utf8,<svg>TRECIA IKONA ČIA</svg>");
+}
+
+/* 4th icon */
+ul.feature-icons li:nth-child(4):before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;utf8,<svg>KETVIRTA IKONA ČIA</svg>");
+}
+
+/* 5th icon */
+ul.feature-icons li:nth-child(5):before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;utf8,<svg>PENKTA IKONA ČIA</svg>");
+}
+
+/* 6th icon */
+ul.feature-icons li:nth-child(6):before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;utf8,<svg>ŠEŠTA IKONA ČIA</svg>");
+}
 
 		@media screen and (max-width: 736px) {
 
@@ -3881,6 +3970,7 @@ input, select, textarea {
 		}
 
 	}
+
 
 
 
