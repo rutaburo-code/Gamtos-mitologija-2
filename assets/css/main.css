@@ -4007,6 +4007,24 @@ ul.feature-icons li .icon svg {
 }
 
 
+/* Prevent horizontal overflow on mobile */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 736px) {
+    ul.feature-icons {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    ul.feature-icons li {
+        width: 100%;
+        padding-left: 4rem;
+        box-sizing: border-box;
+    }
+}
 
 
 
