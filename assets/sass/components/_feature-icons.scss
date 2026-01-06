@@ -23,32 +23,8 @@
 			position: relative;
 			width: 50%;
 
-		/*	&:before { */
-				/* background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512"><path d="M256,0l221.7,128v256L256,512L34.3,384V128L256,0z" fill="#{_palette(border-bg)}" /></svg>') */;
-				&:nth-child(1):before {
-       		background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path fill="none" d="M0 0h24v24H0z"/><path d="M7.291 20.824L2 22l1.176-5.291A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.956 9.956 0 0 1-4.709-1.176z"/></g></svg>');
-   			 }
-    &:nth-child(2):before {
-        background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">SVG ICON 2 HERE</svg>');
-    }
-    &:nth-child(3):before {
-        background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">SVG ICON 3 HERE</svg>');
-    }
-    &:nth-child(4):before {
-        background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">SVG ICON 4 HERE</svg>');
-    }
-    &:nth-child(5):before {
-        background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">SVG ICON 5 HERE</svg>');
-    }
-    &:nth-child(6):before {
-        background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">SVG ICON 6 HERE</svg>');
-    }
-
-    &:nth-child(1),
-    &:nth-child(2) {
-        margin-top: 0;
-    }
-}
+			&:before {
+				background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512"><path d="M256,0l221.7,128v256L256,512L34.3,384V128L256,0z" fill="#{_palette(border-bg)}" /></svg>');
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
