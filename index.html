@@ -413,7 +413,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 						<div class="content">
 							<p><strong>Turite klausimą ar idėją?</strong> Jei svarstote nuo ko pradėti ar ieškote tinkamos krypties - 
 								parašykite, aptarsime tolimesnes galimybes kartu.</p>
-							<form action="https://formspree.io/f/xykwqooy" method="POST">
+							<form id="contact-form" action="https://formspree.io/f/xykwqooy" method="POST">
 								<div class="fields">
 		<div class="field half">
 			<input type="text" name="name" placeholder="Vardas" required />
@@ -490,10 +490,73 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<script>
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(e) {
+	e.preventDefault();
+
+	const data = new FormData(form);
+
+	fetch(form.action, {
+		method: form.method,
+		body: data,
+		headers: { "Accept": "application/json" }
+	})
+	.then(response => {
+		if (response.ok) {
+
+			// fade out form
+			form.classList.add("form-fade-out");
+
+			setTimeout(() => {
+				// išvalom formą
+				form.reset();
+
+				// rodom subtilų pranešimą
+				form.innerHTML = `
+					<p class="form-message">
+						<strong>Ačiū, kad parašėte.</strong><br>
+						Jūsų žinutė pasiekė mane – netrukus susisieksiu.
+					</p>
+				`;
+
+				form.classList.remove("form-fade-out");
+				form.classList.add("form-fade-in");
+
+				// po 5 sekundžių – grąžinam formą atgal
+				setTimeout(() => {
+					form.innerHTML = `
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" placeholder="Vardas" required />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" placeholder="E-paštas" required />
+							</div>
+							<div class="field">
+								<textarea name="message" placeholder="Jūsų žinutė" rows="7" required></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Siųsti žinutę" class="button primary" /></li>
+						</ul>
+					`;
+				}, 5000);
+
+			}, 600);
+
+		} else {
+			alert("Žinutės nepavyko išsiųsti. Bandykite dar kartą.");
+		}
+	});
+});
+</script>
 
 	</body>
 
 </html>
+
 
 
 
