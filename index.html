@@ -413,8 +413,28 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 						<div class="content">
 							<p><strong>Turite klausimą ar idėją?</strong> Jei svarstote nuo ko pradėti ar ieškote tinkamos krypties - 
 								parašykite, aptarsime tolimesnes galimybes kartu.</p>
-							<form>
+							<form action="https://formspree.io/f/xykwqooy" method="POST">
 								<div class="fields">
+		<div class="field half">
+			<input type="text" name="name" placeholder="Vardas" required />
+		</div>
+		<div class="field half">
+			<input type="email" name="email" placeholder="E-paštas" required />
+		</div>
+		<div class="field">
+			<textarea name="message" placeholder="Jūsų žinutė" rows="7" required></textarea>
+		</div>
+	</div>
+
+	<input type="hidden" name="_subject" value="Nauja žinutė iš svetainės" />
+	<input type="hidden" name="_language" value="lt" />
+
+	<ul class="actions">
+		<li><input type="submit" value="Siųsti žinutę" class="primary" /></li>
+	</ul>
+</form>
+
+							<!--	<div class="fields">
 									<div class="field half">
 										<input type="text" name="name" id="name" placeholder="Vardas" />
 									</div>
@@ -428,7 +448,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 								<ul class="actions">
 									<li><input type="submit" value="Siųsti žinutę" class="button primary" /></li>
 								</ul>
-							</form>
+							</form> -->
 						</div>
 						<footer>
 							<ul class="items">
@@ -473,6 +493,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 	</body>
 
 </html>
+
 
 
 
